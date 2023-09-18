@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list__input {
+    width: 350px;
+    height: 30px;
+}
+
+.list__btn {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 30px;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.list__list {
+    font-size: 24px;
+
+}
+
+li {
+    position: relative;
+}
+
+li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: blueviolet;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.checked::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: rgb(31, 211, 85);
+    position: absolute;
+    left: -25px;
+    top: 5px;
+}
